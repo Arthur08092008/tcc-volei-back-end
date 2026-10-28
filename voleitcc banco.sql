@@ -1,0 +1,10 @@
+CREATE TABLE times (
+  id SERIAL PRIMARY KEY,
+  nome VARCHAR(150) NOT NULL,
+  cidade VARCHAR(100) NOT NULL,
+  categoria VARCHAR(20) NOT NULL DEFAULT 'Masculino',
+  tecnico VARCHAR(150) NOT NULL,
+  email VARCHAR(150),
+  telefone VARCHAR(20),
+  criado_em TIMESTAMP DEFAULT NOW()
+);
